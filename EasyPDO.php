@@ -18,9 +18,6 @@ class EasyPDO {
 						PDO::ATTR_ERRMODE                   => PDO::ERRMODE_EXCEPTION, //turn on errors in the form of exceptions
 					];
 				}
-				else {
-					$options = $options;
-				}
 				$this->conn = new PDO("mysql:host={$host};dbname={$name}",$user,$pass,$options);
 				$this->conn -> exec("SET character_set_client='{$encoding}',character_set_connection='{$encoding}',character_set_results='{$encoding}';");
 				return $this->conn;
