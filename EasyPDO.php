@@ -52,7 +52,7 @@ class EasyPDO {
 				return  $stmt; 
 			}
 			else {
-				exit("Ohh, come on! Really? What do you want to do with this function if you not make a query?");
+				exit("Ohh, come on! Really? What do you want to do with this function if you don\'t make a query?");
 			}
 		}
 		else {
